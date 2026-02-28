@@ -1,4 +1,4 @@
-public class Employee {
+public class Employee extends Sortable{
     private String name;
     protected double salary;
     private int hireday;
@@ -21,9 +21,22 @@ public class Employee {
         salary *= 1 + byPercent / 100;
     }
 
+    public int hireDay() {
+        return hireday;
+    }
+
+    public int hireMonth() {
+        return hiremonth;
+    }
+
     public int hireYear() {
         return hireyear;
     }
+
+    public double getSalary() {
+        return salary;
+    }
+
     @Override
     public int compare(Sortable b) {
         Employee eb = (Employee) b;

@@ -1,7 +1,4 @@
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
-class Manager extends Employee {
+public class Manager extends Employee {
 
     private String secretaryName;
 
