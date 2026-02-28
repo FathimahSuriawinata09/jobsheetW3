@@ -1,5 +1,7 @@
-public class Manager extends Employee {
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
+public class Manager extends Employee {
     private String secretaryName;
 
     public Manager(String n, double s, int d, int m, int y) {
@@ -9,11 +11,9 @@ public class Manager extends Employee {
 
     @Override
     public void raiseSalary(double byPercent) {
-        java.util.GregorianCalendar todaysDate =
-                new java.util.GregorianCalendar();
+        GregorianCalendar todaysDate = new GregorianCalendar();
 
-        int currentYear =
-                todaysDate.get(java.util.Calendar.YEAR);
+        int currentYear = todaysDate.get(Calendar.YEAR);
 
         double bonus = 0.5 * (currentYear - hireYear());
 
@@ -24,4 +24,3 @@ public class Manager extends Employee {
         return secretaryName;
     }
 }
-
