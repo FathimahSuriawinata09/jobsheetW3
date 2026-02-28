@@ -1,4 +1,4 @@
-public class Employee extends Sortable{
+class Employee extends Sortable{
     private String name;
     protected double salary;
     private int hireday;
